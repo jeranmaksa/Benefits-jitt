@@ -1,0 +1,17 @@
+import '../styles/globals.css'
+import Head from 'next/head'
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Head>
+        {/* Manggil Font Biar Kesan Elegan Klasik Makin Kentel */}
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
+}
+
+export default MyApp
